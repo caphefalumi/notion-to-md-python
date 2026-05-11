@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-to-md"
+version = "3.1.9"
+description = "Convert Notion pages to Markdown format"
+readme = "README.md"
+license = {text = "ISC"}
+authors = [
+    {name = "Souvik Kar Mahapatra", email = "souvikat001+chitchat@gmail.com"}
+]
+keywords = ["notion", "markdown", "md", "notion-api", "notion-to-md"]
+classifiers = [
+    "License :: OSI Approved :: ISC License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/souvikinator/notion-to-md"
+Repository = "https://github.com/souvikinator/notion-to-md"
+"Bug Tracker" = "https://github.com/souvikinator/notion-to-md/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
