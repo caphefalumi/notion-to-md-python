@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "notion-to-md"
+name = "export-notion-to-markdown"
 version = "3.1.9"
 description = "Convert Notion pages to Markdown format"
 readme = "README.md"
