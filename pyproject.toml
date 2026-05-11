@@ -9,7 +9,7 @@ description = "Convert Notion pages to Markdown format"
 readme = "README.md"
 license = {text = "ISC"}
 authors = [
-    {name = "Souvik Kar Mahapatra", email = "souvikat001+chitchat@gmail.com"}
+    {name = "Dang Duy Toan", email = "dangduytoan13l@gmail.com"}
 ]
 keywords = ["notion", "markdown", "md", "notion-api", "notion-to-md"]
 classifiers = [
